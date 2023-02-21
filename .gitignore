@@ -1,3 +1,8 @@
-tests.ipynb
+# Ignore the old directory
 old/
+
+# Ignore the __pycache__ directory
 __pycache__/
+
+# Ignore the tests.ipynb file
+tests.ipynb
