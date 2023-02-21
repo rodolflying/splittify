@@ -1,4 +1,10 @@
 # please make sure you have already a pytorch install that is cuda enabled!
+demucs
+moviepy
+ffmpeg-python
+pytube
+youtube-search-python
+
 dora-search
 diffq>=0.2.1
 einops
