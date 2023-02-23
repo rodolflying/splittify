@@ -1,3 +1,7 @@
+To see an upgraded version of this documentation please visit:
+
+https://medium.com/@rodolfo.antonio.sep/splittify-the-ultimate-tool-for-music-lovers-and-producers-to-create-unique-versions-of-their-4ef6c0475278
+
 How Does Splittify Work?
 
 The beauty of Splitify is that it is extremely easy to use. All you need to do is follow these simple steps:
