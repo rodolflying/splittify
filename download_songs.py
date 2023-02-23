@@ -90,17 +90,33 @@ def download_mp3(query):
     mp3_path = convert_mp4_to_mp3(file_path)
     return mp3_path
 
+# def main(query_paths):
+
+#     query = input("Enter a search query (if you want to exit don't type or delete input and press enter): ")
+
+#     query_path = download_mp3(query)
+#     query_paths.append(query_path)
+#     while query != "":
+#         print()
+#         query = input("Enter a search query (if you want to exit don't type or delete input and press enter): ")
+#         if query == "":
+#             break
+#         query_path = download_mp3(query)
+#         query_paths.append(query_path)
+#     return query_paths
+
 def main(query_paths):
-    query = input("Enter a search query (if you want to exit don't type or delete input and press enter): ")
-    query_path = download_mp3(query)
-    query_paths.append(query_path)
-    while query != "":
-        print()
-        query = input("Enter a search query (if you want to exit don't type or delete input and press enter): ")
+    queries = []
+    while True:
+        query = input("Enter a search [ song and artist] )(press enter to start downloading): ")
         if query == "":
             break
+        queries.append(query)
+
+    for query in queries:
         query_path = download_mp3(query)
         query_paths.append(query_path)
+
     return query_paths
 
 if __name__ == "__main__":

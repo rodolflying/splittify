@@ -13,12 +13,13 @@ def user_input():
     print("Select a mode: ")
     print("1. Input all the songs and download them and  then split them inmediately")
     print("2. Compare the folders 'outputs' and 'separated' and download the songs that are not in separated")
-    mode = input("Enter a number: ")
+    mode = input("Enter a number [1 or 2]: ")
+
     if mode == "1":
         print("Mode 1 Activated")
         input_files = download_songs.main(query_paths = [])
         # print songs to be processed formatting properly
-        print("Songs to be processed: ")
+        print("Song to be processed: ")
         for song in input_files:
             print(song)
     elif mode == "2":
@@ -27,7 +28,6 @@ def user_input():
         input_files = compare_folders()
         # print songs to be processed formatting properly
         print("Songs to be processed: ")
-
         ## improvement idea: make print a function and use it in both modes
         ## improvement idea: print also the time stimation based on the other songs
         ## times, in order to do this must capture the starting time and the ending time an then calculate the time differences and then with some meta data from the songs determine a estimation of the time it will take to process the songs
@@ -55,7 +55,6 @@ def compare_folders():
     # return the list of songs to be processed
 
     return songs_to_proccess
-
 
 
     return input_files
