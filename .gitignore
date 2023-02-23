@@ -1,7 +1,7 @@
 # Ignore the old directory
-old/
 outputs/
 separated/
+old/
 
 # Ignore the __pycache__ directory
 __pycache__/
